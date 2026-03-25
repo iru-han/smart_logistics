@@ -14,6 +14,7 @@ setup(
         f'{package_name}.navigation',
         f'{package_name}.vision',
         f'{package_name}.ui',
+        package_name + '.ui.components',
     ],
     data_files=[
         ('share/ament_index/resource_index/packages', ['resource/' + package_name]),

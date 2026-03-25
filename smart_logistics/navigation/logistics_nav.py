@@ -22,3 +22,12 @@ class LogisticsNavigator(Node):
         twist.angular.z = 0.0
         self.cmd_vel_pub.publish(twist)
         self.get_logger().info("회전 완료.")
+
+    def go_to_pose(self, x, y):
+        """DB에서 받은 좌표로 로봇을 이동시킵니다."""
+        self.get_logger().info(f"목표 지점으로 이동 시작: x={x}, y={y}")
+        
+        # 실제 Nav2 액션 클라이언트 호출 로직이 들어가야 함
+        # 지금은 테스트를 위해 로그만 남기고 이동하는 척하는 로직으로 대체 확인
+        # 성공 시 True 반환
+        return True
